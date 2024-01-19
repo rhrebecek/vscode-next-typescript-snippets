@@ -1,43 +1,47 @@
 {
   "reactFunctionComponent": {
-    "prefix": "rfc",
+    "prefix": "rc",
     "body": [
       "import { FunctionComponent } from 'react';",
-      "type ${1:${TM_FILENAME_BASE}}Props = {",
-      "  $0",
-      "};",
+      "\n",
+      "type ${1:${TM_FILENAME_BASE}}Props = {};",
+      "\n",
       "const ${1:${TM_FILENAME_BASE}}: FunctionComponent<${1:${TM_FILENAME_BASE}}Props> = () => (",
       "    <div>",
       "      Test",
       "    </div>",
       ");",
+      "\n",
       "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Creates a React function component"
   },
   "nextFunctionPageComponent": {
-    "prefix": "nfc",
+    "prefix": "np",
     "body": [
       "import type { NextPage } from 'next';",
+      "\n",
       "const ${1:${TM_FILENAME_BASE}}: NextPage = () => (",
       "    <div>",
-      "      $1",
+      "      Example Page",
       "    </div>",
       ");",
+      "\n",
       "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Creates a Next function page component"
   },
   "reactTestingLibraryBaseTest": {
-    "prefix": "rtc",
+    "prefix": "rt",
     "body": [
       "import { render, screen } from '@testing-library/react';",
-      "describe('$1', () => {",
+      "\n",
+      "describe('${1:${TM_FILENAME_BASE}}', () => {",
       "    beforeEach(() => {",
       "      render(<$1 />);",
       "    });",
       "\n",
-      "    it('should render', () => {});",
+      "    it('should render without crash', () => {});",
       "});"
     ],
     "description": "Creates a Next function page component"

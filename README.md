@@ -2,8 +2,6 @@
 
 ## VS Code NextJS Typescript snippets
 
----
-
 This extension contains code snippets for [NextJS][nextjs] in [TypeScript][typescript] syntax.
 
 ## Installation
@@ -28,16 +26,16 @@ Below is a list of all available snippets and the triggers of each one. The **�
 
 | Trigger | Content                           |
 | ------: | --------------------------------- |
-|  `rfc→` | React function component skeleton |
-|  `nfc→` | Next function page skeleton       |
+|   `rc→` | React function component skeleton |
+|   `np→` | Next function page skeleton       |
 
 The following table lists all the snippets that can be used for prop types.
-Every snippet regarding prop types begins with `rt` so it's easy to group it all together and explore all the available options.
+Every snippet regarding prop types begins with `r` or `n` so it's easy to group it all together and explore all the available options.
 On top of that each prop type snippets has one equivalent when we need to declare that this property is also required.
 
 | Trigger | Content                                  |
 | ------: | ---------------------------------------- |
-|  `rtc→` | React Testing library base skeleton test |
+|   `rt→` | React Testing library base skeleton test |
 
 [nextjs]: https://nextjs.org
 [typescript]: https://www.typescriptlang.org
