@@ -1,0 +1,54 @@
+{
+  "reactFunctionComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import { FunctionComponent } from 'react';",
+      "\n",
+      "type ${1:${TM_FILENAME_BASE}}Props = {",
+      "  $0",
+      "};",
+      "\n",
+      "const ${1:${TM_FILENAME_BASE}}: FunctionComponent<${1:${TM_FILENAME_BASE}}> = (props) => {",
+      "  return (",
+      "    <div>",
+      "      $1",
+      "    </div>",
+      "  );",
+      "};",
+      "\n",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React function component"
+  },
+  "nextFunctionPageComponent": {
+    "prefix": "nfc",
+    "body": [
+      "import type { NextPage } from 'next';",
+      "\n",
+      "const ${1:${TM_FILENAME_BASE}}: NextPage = () => (",
+      "    <div>",
+      "      $1",
+      "    </div>",
+      ");",
+      "\n",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a Next function page component"
+  },
+  "reactTestingLibraryBaseTest": {
+    "prefix": "rtc",
+    "body": [
+      "import { render, screen } from '@testing-library/react';",
+      "import $0 from '$1';",
+      "\n",
+      "describe('${1:${TM_FILENAME_BASE}}', () => {",
+      "    beforeEach(() => {",
+      "      render(<$0 />);",
+      "    });",
+      "\n",
+      "    it('should render', () => {});",
+      "});"
+    ],
+    "description": "Creates a Next function page component"
+  }
+}
