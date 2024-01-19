@@ -1,11 +1,9 @@
 {
-  "reactFunctionComponent": {
+  "reactComponentFunction": {
     "prefix": "rc",
     "body": [
       "import { FunctionComponent } from 'react';",
-      "\n",
       "type ${1:${TM_FILENAME_BASE}}Props = {};",
-      "\n",
       "const ${1:${TM_FILENAME_BASE}}: FunctionComponent<${1:${TM_FILENAME_BASE}}Props> = () => (",
       "    <div>",
       "      Test",
@@ -16,17 +14,15 @@
     ],
     "description": "Creates a React function component"
   },
-  "nextFunctionPageComponent": {
+  "nextPageComponent": {
     "prefix": "np",
     "body": [
       "import type { NextPage } from 'next';",
-      "\n",
       "const ${1:${TM_FILENAME_BASE}}: NextPage = () => (",
       "    <div>",
       "      Example Page",
       "    </div>",
       ");",
-      "\n",
       "export default ${1:${TM_FILENAME_BASE}};"
     ],
     "description": "Creates a Next function page component"
@@ -35,7 +31,6 @@
     "prefix": "rt",
     "body": [
       "import { render, screen } from '@testing-library/react';",
-      "\n",
       "describe('${1:${TM_FILENAME_BASE}}', () => {",
       "    beforeEach(() => {",
       "      render(<$1 />);",
@@ -44,6 +39,6 @@
       "    it('should render without crash', () => {});",
       "});"
     ],
-    "description": "Creates a Next function page component"
+    "description": "Creates React Testing library base test"
   }
 }
