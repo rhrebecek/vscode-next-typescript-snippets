@@ -8,7 +8,7 @@
   "galleryBanner": {
     "theme": "light"
   },
-  "license": "MIT",
+  "license": "LICENSE.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/rhrebecek/vscode-next-typescript-snippets"
