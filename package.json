@@ -14,7 +14,7 @@
     "url": "https://github.com/rhrebecek/vscode-next-typescript-snippets"
   },
   "engines": {
-    "vscode": "1.83.x"
+    "vscode": "0.10.x"
   },
   "categories": [
     "Snippets"
